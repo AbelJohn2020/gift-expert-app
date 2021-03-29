@@ -30,8 +30,13 @@ const WriteInstructionStyles = styled.li`
         p {
             max-height: 180px;
             text-align: center;
+            color: #444444;
             margin: 0;
             padding: 0;
+        }
+
+        .inputValue {
+            color: #444444;
         }
     }
 `;

@@ -25,8 +25,7 @@ const WriteInstruction = ({input}) => {
     return (
         <>
             <WriteInstructionStyles>
-                <p>{input}</p>
-                <p>{input.length}</p>
+                <p className="inputValue">{input}</p>
                 <div className="container">
                     {
                         giftImage.map((img) => (

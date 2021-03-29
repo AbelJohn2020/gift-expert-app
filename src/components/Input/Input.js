@@ -1,7 +1,12 @@
 import React from 'react';
 import InputStyles from './InputStyles';
 
-export const Input = ({type, inputValue, setInputValue, placeholder}) => {
+export const Input = ({
+    type, 
+    inputValue, 
+    setInputValue, 
+    placeholder,
+}) => {
     const handleChange = (e) => {
         setInputValue(e.target.value);
     }
@@ -14,6 +19,7 @@ export const Input = ({type, inputValue, setInputValue, placeholder}) => {
                 placeholder={placeholder}
                 onChange={(e) => handleChange(e)}
             />
+
         </>
     )
 }

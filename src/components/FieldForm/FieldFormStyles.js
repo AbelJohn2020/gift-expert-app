@@ -12,7 +12,11 @@ const FieldFormStyles = styled.form`
         list-style-type: none;
         padding: 4px 8px;
     }
-    
+    .canNotBeBlank {
+        margin: 8px 0;
+        color: red;
+        font-size: 12px;
+    }
 `;
 
 export default FieldFormStyles;
