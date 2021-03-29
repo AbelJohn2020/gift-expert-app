@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Input } from '../Input/Input';
+import WriteInstruction from '../WriteInstruction/WriteInstruction';
 import FieldFormStyles from './FieldFormStyles';
 
 const FieldForm = () => {
@@ -13,6 +14,7 @@ const FieldForm = () => {
         setFieldForm(newArray);
         setInputValue('');
     }
+
     return (
         <FieldFormStyles onSubmit={(e) => handleSubmit(e)}>
             <Input 
@@ -21,11 +23,11 @@ const FieldForm = () => {
                 setInputValue={setInputValue}
             />
             <hr />
-            <div>
+            <ul>
                 {fieldForm.map((input) => (
-                <p key={input}>{input}</p>
+                    <WriteInstruction key={input} input={input}/>
                 ))}
-            </div>
+            </ul>
         </FieldFormStyles>
     )
 }

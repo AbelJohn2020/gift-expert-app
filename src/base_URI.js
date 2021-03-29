@@ -1,0 +1,1 @@
+export const BASE_URI= 'https://api.giphy.com/v1/gifs/search?q=Love&limit=40&api_key=MUsLPLnbjtFosa0X15JsZEZ3TOahbuOQ';
