@@ -27,10 +27,10 @@ const WriteInstruction = ({input}) => {
             <WriteInstructionStyles>
                 <p>{input}</p>
                 <p>{input.length}</p>
-                <div>
+                <div className="container">
                     {
                         giftImage.map((img) => (
-                            <div key={img.id}>
+                            <div key={img.id} className="giftImage">
                                 <img src={img.image} alt={img.title}/>
                                 <p>{img.title}</p>
                             </div>

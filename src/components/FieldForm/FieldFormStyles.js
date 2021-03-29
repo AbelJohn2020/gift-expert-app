@@ -1,13 +1,18 @@
 import styled from '@emotion/styled';
 
 const FieldFormStyles = styled.form`
-    background: red;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     ul {
-        margin: 0;
+        margin: 8px 0 0 0;
         padding: 0;
         list-style-type: none;
         padding: 4px 8px;
     }
+    
 `;
 
 export default FieldFormStyles;

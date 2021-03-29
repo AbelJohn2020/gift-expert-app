@@ -1,11 +1,13 @@
 import React from 'react';
+import AppStyles from './AppStyles';
 import FieldForm from './components/FieldForm/FieldForm';
+import './App.css';
 
 function App() {
   return (
-    <div>
+    <AppStyles>
       <FieldForm />
-    </div>
+    </AppStyles>
   );
 }
 

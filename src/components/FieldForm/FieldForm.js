@@ -21,8 +21,8 @@ const FieldForm = () => {
                 type="text"
                 inputValue={inputValue}
                 setInputValue={setInputValue}
+                placeholder="Write something..."
             />
-            <hr />
             <ul>
                 {fieldForm.map((input) => (
                     <WriteInstruction key={input} input={input}/>
