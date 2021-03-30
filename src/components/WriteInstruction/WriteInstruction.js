@@ -7,6 +7,7 @@ const WriteInstruction = ({input}) => {
 
     useEffect(() => {
         getGifts(input)
+            .then((images) => setGiftImage(images));
     }, [])
     
     return (
