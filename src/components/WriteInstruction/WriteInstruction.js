@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import { BASE_URI } from '../../base_URI';
 import WriteInstructionStyles from './WriteInstructionStyles';
 
 const WriteInstruction = ({input}) => {
     const [giftImage, setGiftImage] = useState([]);
 
     const giftImages = async () => {
-        const baseUri = await fetch(BASE_URI);
+        const baseUri = await fetch(`https://api.giphy.com/v1/gifs/search?q=${input}&limit=34&api_key=MUsLPLnbjtFosa0X15JsZEZ3TOahbuOQ`);
         const { data } = await baseUri.json();
 
         const getImage = data.map((gift) => {
