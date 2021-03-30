@@ -11,7 +11,7 @@ const FieldForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const newArray = [...fieldForm, inputValue];
+        const newArray = [inputValue];
         setFieldForm(newArray);
         setInputValue('');
 
