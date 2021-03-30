@@ -1,0 +1,1 @@
+export const BASE_URI= `https://api.giphy.com/v1/gifs/search?q=${encodeURI(input)}&limit=34&api_key=MUsLPLnbjtFosa0X15JsZEZ3TOahbuOQ`;
