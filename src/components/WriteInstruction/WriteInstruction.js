@@ -13,7 +13,7 @@ const WriteInstruction = ({input}) => {
                 <div className="container">
                     {
                         images.map((img) => (
-                            <div key={img.id} className="giftImage">
+                            <div key={img.id} className="giftImage animate__animated animate__fadeInBottomLeft">
                                 <img src={img.image} alt={img.title}/>
                                 <p>{img.title}</p>
                             </div>
